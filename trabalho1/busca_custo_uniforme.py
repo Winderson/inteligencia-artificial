@@ -1,13 +1,10 @@
 #!/usr/bin/env python
 
 
-'''
+from problema_torre_hanoi import ProblemaTorreHanoi
 
 
+class BuscaCustoUniforme():
 
-
-'''
-
-class BuscaCustoUniforme(object):
-
-    pass
+    def busca_custo_uniforme(self, problema: ProblemaTorreHanoi):
+        pass
