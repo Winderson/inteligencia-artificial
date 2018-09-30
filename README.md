@@ -1,7 +1,7 @@
 # Inteligência artificial
 ### Winderson Jose B. dos Santos
 
-### Trabalho 1
+## Trabalho 1
 
 #### Classe BuscaEmLargura
 ##### Métodos
@@ -32,7 +32,7 @@
 - funcao_sucessora(estado)
 - mover_objeto(estado, acao)
 
-### Trabalho 2
+## Trabalho 2
 
 #### Classe Problema (template)
 ##### Métodos
@@ -64,6 +64,6 @@
 - mover_baixo(estado,labirinto, acao)
 - heuristica(estado)
 
-### Estudo dirigido
+## Estudo dirigido
 
 #### Classe HillClimbing
