@@ -14,7 +14,7 @@ class BuscaEmProfundidade(object):
             if not borda:
                 print('Falha ao encontrar solucao')
                 return []
-            estado = borda.pop(0)
+            estado = borda.pop(-1)
             print(f'=' * 80)
             print(f'> Estado sendo avaliado:')
             print(f'{estado}')

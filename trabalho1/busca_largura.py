@@ -26,7 +26,6 @@ class BuscaEmLargura(object):
                 return problema.solucao(estado)
             sucessores = problema.funcao_sucessora(estado)
             borda.extend([x for x in sucessores if x not in memoria])
-
             memoria.extend([x for x in sucessores if x not in memoria])
 
             # print('-'*80)

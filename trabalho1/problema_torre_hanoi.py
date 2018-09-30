@@ -40,7 +40,7 @@ class ProblemaTorreHanoi(Problema):
         estado.pai = None
         return estado
 
-    def solucao(self):
+    def solucao(self, estado):
         solucao_final = []
         while estado.pai is not None:
             solucao_final.append(estado)
@@ -63,9 +63,9 @@ class ProblemaTorreHanoi(Problema):
             estado.torreC.append(estado.torreA.pop(-1))
         elif acao == 'B->A' and tamB > 0 and (tamA == 0 or estado.torreB[tamB - 1] < estado.torreA[tamA - 1]):
             estado.torreA.append(estado.torreB.pop(-1))
-        elif acao == 'B->C' and tamB > 0 (tamC == 0 or estado.torreB[tamB - 1] < estado.torreC[tamC - 1]):
+        elif acao == 'B->C' and tamB > 0 and (tamC == 0 or estado.torreB[tamB - 1] < estado.torreC[tamC - 1]):
             estado.torreC.append(estado.torreB.pop(-1))
-        elif acao == 'C->A' and tamC > 0 and  (tamA == 0 or estado.torreC[tamC - 1] < estado.torreA[tamA - 1]):
+        elif acao == 'C->A' and tamC > 0 and (tamA == 0 or estado.torreC[tamC - 1] < estado.torreA[tamA - 1]):
             estado.torreA.append(estado.torreC.pop(-1))
         elif acao == 'C->B' and tamC > 0 and (tamB == 0 or estado.torreC[tamC - 1] < estado.torreB[tamB - 1]):
             estado.torreB.append(estado.torreC.pop(-1))
@@ -88,17 +88,10 @@ class ProblemaTorreHanoi(Problema):
         a4 = self.__mover_teste(estado, 'B->C')
         a5 = self.__mover_teste(estado, 'C->A')
         a6 = self.__mover_teste(estado, 'C->B')
-        for estadoAux in self.memoria:
-            if (a1 and a1 == estadoAux):
-                sucessores.append(a1)
-            if (a2 and a2 == estadoAux):
-                sucessores.append(a1)
-            if (a3 and a3 == estadoAux):
-                sucessores.append(a1)
-            if (a4 and a4 == estadoAux):
-                sucessores.append(a4)
-            if (a5 and a5 == estadoAux):
-                sucessores.append(a5)
-            if (a6 and a6 == estadoAux):
-                sucessores.append(a6)
+
+        if a1: sucessores.append(a1)
+        if a2: sucessores.append(a2)
+        if a3: sucessores.append(a3)
+        if a4: sucessores.append(a4)
+        if a5: sucessores.append(a5)
         return sucessores
