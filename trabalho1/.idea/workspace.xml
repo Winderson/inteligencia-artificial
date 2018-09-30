@@ -10,12 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2b3691e-f4a1-4a1c-b40e-ef190a34e752" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../trabalho2/arquivos/maze01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trabalho2/arquivos/maze02.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trabalho2/busca_a_estrela.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trabalho2/problema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trabalho2/problema_labirinto.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../estudo-dirigido/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../estudo-dirigido/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/busca_custo_uniforme.py" beforeDir="false" afterPath="$PROJECT_DIR$/busca_custo_uniforme.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/busca_largura.py" beforeDir="false" afterPath="$PROJECT_DIR$/busca_largura.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/busca_profundidade.py" beforeDir="false" afterPath="$PROJECT_DIR$/busca_profundidade.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/problema_torre_hanoi.py" beforeDir="false" afterPath="$PROJECT_DIR$/problema_torre_hanoi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabalho2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../trabalho2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabalho2/a_estrela.py" beforeDir="false" afterPath="$PROJECT_DIR$/../trabalho2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trabalho2/busca_gulosa.py" beforeDir="false" afterPath="$PROJECT_DIR$/../trabalho2/busca_gulosa.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +33,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/trabalho1$main.coverage" NAME="main Coverage Results" MODIFIED="1538285312433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/trabalho1$main.coverage" NAME="main Coverage Results" MODIFIED="1538293770638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="896192828">
@@ -55,13 +64,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="py" value="4013" />
+          <entry key="py" value="4039" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="4013" />
+          <entry key="Python" value="4039" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -74,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/busca_largura.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            <state relative-caret-position="131">
+              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
               <folding>
                 <element signature="e#23#48#0" expanded="true" />
               </folding>
@@ -86,17 +95,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problema.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+            <state relative-caret-position="135">
+              <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/problema_torre_hanoi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+            <state relative-caret-position="720">
+              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -104,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/busca_profundidade.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="22" selection-end-column="47" />
+            <state relative-caret-position="90">
+              <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -113,17 +122,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/busca_custo_uniforme.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="101">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="11" />
               <folding>
                 <element signature="e#24#64#0" expanded="true" />
               </folding>
@@ -154,11 +163,11 @@
       <list>
         <option value="$PROJECT_DIR$/problema.py" />
         <option value="$PROJECT_DIR$/problemaTorreHanoi.py" />
-        <option value="$PROJECT_DIR$/problema_torre_hanoi.py" />
-        <option value="$PROJECT_DIR$/busca_profundidade.py" />
-        <option value="$PROJECT_DIR$/busca_largura.py" />
-        <option value="$PROJECT_DIR$/busca_custo_uniforme.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/busca_largura.py" />
+        <option value="$PROJECT_DIR$/busca_profundidade.py" />
+        <option value="$PROJECT_DIR$/busca_custo_uniforme.py" />
+        <option value="$PROJECT_DIR$/problema_torre_hanoi.py" />
       </list>
     </option>
   </component>
@@ -279,13 +288,13 @@
     <frame x="1366" y="-2" width="1366" height="770" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19621213" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19621213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32952693" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.315625" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.315625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.384375" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -337,51 +346,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/busca_largura.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="131">
+          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
           <folding>
             <element signature="e#23#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problema_torre_hanoi.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="e#24#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/busca_profundidade.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="90">
+          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/busca_custo_uniforme.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="101">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/problema.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="e#24#64#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problema_torre_hanoi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
         </state>
       </provider>
     </entry>

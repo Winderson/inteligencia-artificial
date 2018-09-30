@@ -9,7 +9,7 @@ from problema import Problema
 
 
 def main():
-    # Definicao do problema dos canibais
+    # Definicao do problema da Torre de Hanoi
     problema = ProblemaTorreHanoi()
 
     # Teste com busca em profundidade

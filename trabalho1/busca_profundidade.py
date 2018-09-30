@@ -7,7 +7,6 @@ from problema import Problema
 
 
 class BuscaEmProfundidade(object):
-
     def busca_profundidade(self, problema: Problema):
         borda = [problema.estado_inicial]
         memoria = [problema.estado_inicial]

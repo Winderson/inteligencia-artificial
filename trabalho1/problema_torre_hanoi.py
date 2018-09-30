@@ -4,10 +4,6 @@ from problema import Problema
 
 
 class ProblemaTorreHanoi(Problema):
-    torreA = []
-    torreB = []
-    torreC = []
-
     class Estado(object):
         def __init__(self):
             self.torreA = []
@@ -50,7 +46,7 @@ class ProblemaTorreHanoi(Problema):
     def funcao_objetivo(self, estado):
         return estado.torreC == [5, 4, 3, 2, 1]
 
-    def __mover_teste(self, estado_pai, acao):
+    def __mover_objeto(self, estado_pai, acao):
         estado = estado_pai.copy()
         estado.acao = acao
         tamA = len(estado.torreA)
@@ -81,12 +77,12 @@ class ProblemaTorreHanoi(Problema):
 
     def funcao_sucessora(self, estado):
         sucessores = []
-        a1 = self.__mover_teste(estado, 'A->B')
-        a2 = self.__mover_teste(estado, 'A->C')
-        a3 = self.__mover_teste(estado, 'B->A')
-        a4 = self.__mover_teste(estado, 'B->C')
-        a5 = self.__mover_teste(estado, 'C->A')
-        a6 = self.__mover_teste(estado, 'C->B')
+        a1 = self.__mover_objeto(estado, 'A->B')
+        a2 = self.__mover_objeto(estado, 'A->C')
+        a3 = self.__mover_objeto(estado, 'B->A')
+        a4 = self.__mover_objeto(estado, 'B->C')
+        a5 = self.__mover_objeto(estado, 'C->A')
+        a6 = self.__mover_objeto(estado, 'C->B')
 
         if a1: sucessores.append(a1)
         if a2: sucessores.append(a2)

@@ -1,8 +1,11 @@
+#!/usr/bin/env python
+from math import sqrt
 
 from problema import Problema
 
-class BuscaGulosa(object):
-    def busca_gulosa(self, problema: Problema):
+class BuscaAEstrela(object):
+
+    def busca_a_estrela(self, problema: Problema):
         borda = [problema.estado_inicial]
         memoria = [problema.estado_inicial]
         while True:
@@ -18,12 +21,14 @@ class BuscaGulosa(object):
             sucessores = problema.funcao_sucessora(estado)
             borda.extend([x for x in sucessores if x not in memoria])
             memoria.extend([x for x in sucessores if x not in memoria])
-            print('Sucessores:')
+            print('sucessores:')
             for x in sucessores:
                 print(x)
-            print('Memoria:')
+            print('*-*' * 80)
+            print('memoria:')
             for x in memoria:
                 print(x)
             print()
             memoria.extend(sucessores)
             print(f'> Estados sucessores: {len(sucessores)}')
+

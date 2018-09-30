@@ -22,11 +22,8 @@ class BuscaCustoUniforme():
             sucessores = problema.funcao_sucessora(estado)
             borda.extend([x for x in sucessores if x not in memoria])
             memoria.extend([x for x in sucessores if x not in memoria])
-            print('sucessores:')
             for x in sucessores:
                 print(x)
-            print('*-*' * 80)
-            print('memoria:')
             for x in memoria:
                 print(x)
             print()
