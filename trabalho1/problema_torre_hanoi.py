@@ -7,7 +7,6 @@ class ProblemaTorreHanoi(Problema):
     torreA = []
     torreB = []
     torreC = []
-    memoria = []
 
     class Estado(object):
         def __init__(self):
@@ -26,7 +25,7 @@ class ProblemaTorreHanoi(Problema):
             return estado
 
         def __repr__(self):
-            return f'{self.torreA} \n {self.torreB} \n {self.torreC}'
+            return f' \n Torre A: {self.torreA} \n Torre B: {self.torreB} \n Torre C: {self.torreC}'
 
         def __eq__(self, estado):
             return self.torreA == estado.torreA and self.torreB == estado.torreB and self.torreC == estado.torreC
