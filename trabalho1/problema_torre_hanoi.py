@@ -2,10 +2,12 @@
 
 from problema import Problema
 
+
 class ProblemaTorreHanoi(Problema):
     torreA = []
     torreB = []
     torreC = []
+    memoria = []
 
     class Estado(object):
         def __init__(self):
@@ -15,14 +17,19 @@ class ProblemaTorreHanoi(Problema):
             self.pai = None
             self.custo = 0
             self.acao = ''
+
         def copy(self):
             estado = ProblemaTorreHanoi.Estado()
             estado.torreA = self.torreA.copy()
             estado.torreB = self.torreB.copy()
             estado.torreC = self.torreC.copy()
             return estado
+
         def __repr__(self):
             return f'{self.torreA} \n {self.torreB} \n {self.torreC}'
+
+        def __eq__(self, estado):
+            return self.torreA == estado.torreA and self.torreB == estado.torreB and self.torreC == estado.torreC
 
     @property
     def estado_inicial(self):
@@ -44,23 +51,23 @@ class ProblemaTorreHanoi(Problema):
     def funcao_objetivo(self, estado):
         return estado.torreC == [5, 4, 3, 2, 1]
 
-    def __mover_(self, estado_pai, acao):
+    def __mover_teste(self, estado_pai, acao):
         estado = estado_pai.copy()
         estado.acao = acao
         tamA = len(estado.torreA)
         tamB = len(estado.torreB)
         tamC = len(estado.torreC)
-        if acao == 'A->B' and (estado.torreA[tamA - 1] < estado.torreB[tamB - 1] or tamB == 0):
+        if acao == 'A->B' and tamA > 0 and (tamB == 0 or estado.torreA[tamA - 1] < estado.torreB[tamB - 1]):
             estado.torreB.append(estado.torreA.pop(-1))
-        elif acao == 'A->C' and (estado.torreA[tamA - 1] < estado.torreC[tamC - 1] or tamC == 0):
+        elif acao == 'A->C' and tamA > 0 and (tamC == 0 or estado.torreA[tamA - 1] < estado.torreC[tamC - 1]):
             estado.torreC.append(estado.torreA.pop(-1))
-        elif acao == 'B->A' and (estado.torreB[tamB - 1] < estado.torreA[tamA - 1] or tamA == 0):
+        elif acao == 'B->A' and tamB > 0 and (tamA == 0 or estado.torreB[tamB - 1] < estado.torreA[tamA - 1]):
             estado.torreA.append(estado.torreB.pop(-1))
-        elif acao == 'B->C' and (estado.torreB[tamB - 1] < estado.torreC[tamC - 1] or tamC == 0):
+        elif acao == 'B->C' and tamB > 0 (tamC == 0 or estado.torreB[tamB - 1] < estado.torreC[tamC - 1]):
             estado.torreC.append(estado.torreB.pop(-1))
-        elif acao == 'C->A' and (estado.torreC[tamC - 1] < estado.torreA[tamA - 1] or tamA == 0):
+        elif acao == 'C->A' and tamC > 0 and  (tamA == 0 or estado.torreC[tamC - 1] < estado.torreA[tamA - 1]):
             estado.torreA.append(estado.torreC.pop(-1))
-        elif acao == 'C->B' and (estado.torreC[tamC - 1] < estado.torreB[tamB - 1] or tamB == 0):
+        elif acao == 'C->B' and tamC > 0 and (tamB == 0 or estado.torreC[tamC - 1] < estado.torreB[tamB - 1]):
             estado.torreB.append(estado.torreC.pop(-1))
         else:
             return None
@@ -75,16 +82,23 @@ class ProblemaTorreHanoi(Problema):
 
     def funcao_sucessora(self, estado):
         sucessores = []
-        a1 = self.__mover(estado, 'A->B')
-        a2 = self.__mover(estado, 'A->C')
-        a3 = self.__mover(estado, 'B->A')
-        a4 = self.__mover(estado, 'B->C')
-        a5 = self.__mover(estado, 'C->A')
-        a6 = self.__mover(estado, 'C->B')
-        if a1: sucessores.append(a1)
-        if a2: sucessores.append(a2)
-        if a3: sucessores.append(a3)
-        if a4: sucessores.append(a4)
-        if a5: sucessores.append(a5)
-        if a6: sucessores.append(a6)
+        a1 = self.__mover_teste(estado, 'A->B')
+        a2 = self.__mover_teste(estado, 'A->C')
+        a3 = self.__mover_teste(estado, 'B->A')
+        a4 = self.__mover_teste(estado, 'B->C')
+        a5 = self.__mover_teste(estado, 'C->A')
+        a6 = self.__mover_teste(estado, 'C->B')
+        for estadoAux in self.memoria:
+            if (a1 and a1 == estadoAux):
+                sucessores.append(a1)
+            if (a2 and a2 == estadoAux):
+                sucessores.append(a1)
+            if (a3 and a3 == estadoAux):
+                sucessores.append(a1)
+            if (a4 and a4 == estadoAux):
+                sucessores.append(a4)
+            if (a5 and a5 == estadoAux):
+                sucessores.append(a5)
+            if (a6 and a6 == estadoAux):
+                sucessores.append(a6)
         return sucessores

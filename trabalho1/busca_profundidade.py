@@ -1,17 +1,23 @@
 #!/usr/bin/env python
 
-from problema_torre_hanoi import ProblemaTorreHanoi
+from pprint import pprint
+from typing import List
+
+from problema import Problema
 
 
-class BuscaEmProfundidade():
+class BuscaEmProfundidade(object):
 
-    def busca_profundidade(self, problema: ProblemaTorreHanoi):
+    def busca_profundidade(self, problema: Problema):
         borda = [problema.estado_inicial]
         while True:
             if not borda:
                 print('Falha ao encontrar solucao')
                 return []
             estado = borda.pop(0)
+            print(f'=' * 80)
+            print(f'> Estado sendo avaliado:')
+            print(f'{estado}')
             print(estado)
             print(type(estado))
             if problema.funcao_objetivo(estado):
