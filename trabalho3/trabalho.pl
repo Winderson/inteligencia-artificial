@@ -34,6 +34,17 @@ ordenada([C1|Cauda], L):-
 	insercao_ord(C1,L, L1),
 	ordenada(Cauda,L).
 
+% Busca
+busca(X,[],[X]).
+busca(X,[C1|R1],R):-
+	intersecao(X,C1),
+	uniao(X,C1,Comp),
+	busca(R1,Comp,R).	
+
+busca(X,[C1|R1],[C1,R2]):-
+	busca(X,C1,R2).
+
+
 % Exercicio 5
 % Subculturas
 subcultura([],[]).
