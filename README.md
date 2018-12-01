@@ -66,4 +66,41 @@
 
 ## :blue_book: Estudo dirigido
 
-#### Classe HillClimbing
+#### Classe Item
+##### Atributos
+- tipo
+- peso
+- valor
+- quantidade
+- quantidadeDisponivel
+
+#### Classe Estado
+##### Atributos
+- itens[]
+
+#### Classe ProblemaMochila()
+##### Métodos
+- estado_inicial()
+- solucao(estado)
+- funcao_objetivo(estado)
+- funcao_sucessora(estado)
+- verificaSeVizinho(estado_atual, estado_gerado)
+- itens_disponiveis()
+
+#### Classe HillClimbing()
+##### Métodos
+- executa(ProblemaMochila)
+
+#### Classe TabuSearch()
+##### Métodos
+- executa(ProblemaMochila)
+
+## :blue_book: Trabalho 3
+##### Arquivo
+- trabalho.pl
+##### Predicados
+- num_elementos
+- intercaladas.
+- inserção ordenada
+- ordenada
+- subcultura
