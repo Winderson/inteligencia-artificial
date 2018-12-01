@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+from problema_mochila import ProblemaMochila
 
 class HillClimbing(object):
 
@@ -6,19 +6,41 @@ class HillClimbing(object):
         self.max_iteracoes = max_iteracoes
         self.max_iteracoes_sem_melhora = max_iteracoes_sem_melhora
 
-    def executa(self, problema):
-        estado_atual = problema.estado_inicial
-        i = 0
-        j = 0
+    def executa(self, problema: ProblemaMochila):
+        """Implementacao do hill climbing."""
 
-        while i < self.max_iteracoes or j < self.max_iteracoes_sem_melhora:
-            print(f"{i:03d} - {estado_atual} - {problema.funcao_objetivo(estado_atual)}")
+        # Gera o estado inicial
+        estado_atual = problema.estado_inicial
+
+        # Criterios de parada
+        # 1. numero maximo de iteracoes
+        # 2. numero maximo de iteracoes sem melhora
+        # 3. tempo maximo
+        # 4. atingiu o objetivo
+
+        # Loop principal
+        iteracao = 0  # maximo de iteracoes
+        iteracao_sem_melhora = 0  # maximo de iteracoes sem melhora
+
+        while iteracao < self.max_iteracoes and iteracao_sem_melhora < self.max_iteracoes_sem_melhora:
+
+            # Imprime a solucao
+            solucao = ""
+            for item in estado_atual.itens:
+                solucao = solucao +"| TIPO:"+str(item.tipo)+" | QT:"+str(item.quantidade)+" |"
+            print(f'{iteracao:03d} - VL:{problema.funcao_objetivo(estado_atual)} - MOCHILA:{solucao}')
+
+            # Gera um estado vizinho
             vizinho = problema.funcao_sucessora(estado_atual)
+
+            # Verifica se o estado vizinho eh melhor que o atual
             custo_atual = problema.funcao_objetivo(estado_atual)
             custo_vizinho = problema.funcao_objetivo(vizinho)
-            if custo_vizinho < custo_atual:
-                print(f'achou melhor! atual = {custo_atual}  vizinho {custo_vizinho}')
-                estado_atual = vizinho
-                j = 0
-            i += 1
-            j += 1
+
+            if custo_atual != -1 and custo_vizinho != -1:
+                if custo_vizinho > custo_atual:
+                    print(f'>>>>>> ACHOU MELHOR! ATUAL = {custo_atual}  VIZINHO = {custo_vizinho} <<<<<<<<<')
+                    estado_atual = vizinho
+                    iteracao_sem_melhora = 0
+            iteracao += 1
+            iteracao_sem_melhora += 1

@@ -4,6 +4,11 @@ from problema import Problema
 
 
 class ProblemaTorreHanoi(Problema):
+
+
+
+
+
     class Estado(object):
         def __init__(self):
             self.torreA = []
