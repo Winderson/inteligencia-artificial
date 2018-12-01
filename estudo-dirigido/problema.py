@@ -1,4 +1,10 @@
 #!/usr/bin/env python
+# Nome: Winderson Jose Barboza dos Santos
+# Disciplina: Inteligencia Artificial
+# Professor: Chaua
+# Curso: Ciência da computação
+
+
 class Problema(object):
     """Classe que representa a definicao de um problema. Deve ser usada
     como base para a definicao dos problemas.

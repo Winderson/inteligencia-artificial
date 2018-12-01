@@ -1,4 +1,11 @@
 #!/usr/bin/env python
+# Nome: Winderson Jose Barboza dos Santos
+# Disciplina: Inteligencia Artificial
+# Professor: Chaua
+# Curso: Ciência da computação
+
+
+
 from hill_climbing import HillClimbing
 from problema_mochila import ProblemaMochila
 from tabu_search import TabuSearch

@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# Nome: Winderson Jose Barboza dos Santos
+# Disciplina: Inteligencia Artificial
+# Professor: Chaua
+# Curso: Ciência da computação
+
 from problema_mochila import ProblemaMochila
 
 class TabuSearch(object):
@@ -9,7 +15,7 @@ class TabuSearch(object):
         self.lista_tabu = []
 
     def executa(self, problema: ProblemaMochila):
-        """Implementacao do hill climbing."""
+        """Implementacao do tabu search."""
 
         # Gera o estado inicial
         estado_atual = problema.estado_inicial
